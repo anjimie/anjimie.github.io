@@ -74,70 +74,77 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="GitHub-Pages-hexo-�����"><a href="#GitHub-Pages-hexo-�����" class="headerlink" title="GitHub Pages+ hexo �����"></a>GitHub Pages+ hexo �����</h1><p>���Ž̳�����������˲��͵Ĵ����ַ��<a href="https://anjimie.github.io" target="_blank" rel="noopener">�ҵĲ���</a>��Ŀǰ�տ���Ҳ������Ҳû���滻��������Ҫ����Ϊ�����</p>
-<p>�ȴ������ĸ������Ӱɡ�</p>
-<p>�Դ˼�¼һ�������Ŀӣ�����һ�²��裬�䲻�����컹��Ҫ�������ع�����</p>
-<h2 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h2><ol>
-<li>��װgit<br><strong>��cmd����һ�򱶣���</strong><br>��װ����Ҳ�ܼ򵥣�<a href="https://gitforwindows.org/" target="_blank" rel="noopener">��������</a>��������ɵ����װ����װ��ɿ�����<code>git version</code>�鿴git�İ汾��</li>
-<li>��װnode.js<br><a href="https://nodejs.org/en/" target="_blank" rel="noopener">��������</a>ѡ����ʵ����ؾͺ��ˣ�����Ӧ��û���ɣ���������������ĳ�ѧ����˵�ǵģ���<br>���ذ�װ������Ҫԭ����hexo�ǻ������ģ������npm����Ҳ�ܺ��á�<br>��װʱע��һ�㣺��<code>Custom Setup</code>������Թ���Add to PATH,֮��Ͳ�������ϵͳ�����ˡ�<br>��װ��ǣ�ͬ�����Բ鿴�汾��<code>node -v</code>,Ҳ��������<code>path</code>���ߵ㿪�ҵĵ����ǵ�ϵͳ�����鿴�Ƿ������á�<ol start="3">
-<li>����GitHub<br>����һ���ֿ⣬��������Ϊ<code>username.github.io</code>username��������û�����</li>
-<li>��װhexo<br>�������һ����װ�Ķ�����Ҳ�������Ʒ�ġ���������Ǿ��õ���git��npm��</li>
+        <ol>
+<li><h1 id="GitHub-Pages-hexo-搭建博客"><a href="#GitHub-Pages-hexo-搭建博客" class="headerlink" title="GitHub Pages+ hexo 搭建博客"></a>GitHub Pages+ hexo 搭建博客</h1><p>跟着教程摸索着完成了博客的搭建。地址是<a href="https://anjimie.github.io" target="_blank" rel="noopener">我的博客</a>。目前空空如也，而且也没有替换域名（主要是因为穷唉）。</p>
+<p>等待后续的更改添加吧。</p>
+<p>以此记录一下遇到的坑，备份一下步骤，冷不防哪天还需要重新来呢哈哈。</p>
+<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2></li>
 </ol>
-</li>
-</ol>
+<pre><code>1. 安装git 
+</code></pre><p>   <strong>比cmd好用一万倍！！</strong><br>   安装过程也很简单，<a href="https://gitforwindows.org/" target="_blank" rel="noopener">下载链接</a>，下载完成点击安装。安装完成可以用<code>git version</code>查看git的版本。</p>
+<pre><code>2.  安装node.js
+</code></pre><p>   <a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载链接</a>选择合适的下载就好了，两个应该没大差吧（起码对于我这样的初学者来说是的）。<br>   下载安装它的主要原因是hexo是基于它的，里面的npm工具也很好用。<br>   安装时注意一点：在<code>Custom Setup</code>这里可以勾上Add to PATH,之后就不用配置系统变量了。<br>   安装完城，同样可以查看版本号<code>node -v</code>,也可以输入<code>path</code>或者点开我的电脑那的系统变量查看是否已配置。</p>
+<ol start="3">
+<li>配置GitHub<br>建立一个仓库，将其命名为<code>username.github.io</code>username就是你的用户名。</li>
+<li><p>安装hexo<br>这是最后一个安装的东西，也是最考验人品的。在这里，我们就用到了git和npm。</p>
 <ul>
-<li>�½�һ���ļ��У����blog��������ݵȡ�</li>
-<li>�ڸ��ļ����ڣ��Ҽ��㿪<strong>git bash</strong>��cmd��ʲô���������ɡ�</li>
-<li>�����������װ</li>
+<li>新建一个文件夹，存放blog的相关内容等。</li>
+<li>在该文件夹内，右键点开<strong>git bash</strong>，cmd是什么？忘掉它吧。</li>
+<li>输入以下命令安装</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
 <ul>
-<li><code>hexo init</code>  �Զ�������վ����Ҫ���ļ�</li>
-<li><code>npm install</code>  �Զ���װnode_modules</li>
-<li><code>hexo server</code>  �������񣬴�ʱ��<a href="http://localhost:4000/���Կ�����Ĳ����ˡ�" target="_blank" rel="noopener">http://localhost:4000/���Կ�����Ĳ����ˡ�</a><h2 id="��������-1"><a href="#��������-1" class="headerlink" title="��������"></a>��������</h2></li>
+<li><code>hexo init</code>  自动创建网站所需要的文件</li>
+<li><code>npm install</code>  自动安装node_modules</li>
+<li><code>hexo server</code>  启动服务，此时打开<a href="http://localhost:4000/可以看到你的博客了。" target="_blank" rel="noopener">http://localhost:4000/可以看到你的博客了。</a><h2 id="发博客啦"><a href="#发博客啦" class="headerlink" title="发博客啦"></a>发博客啦</h2></li>
 </ul>
 <ol>
-<li>����һ���µ�post<br>�Ȳ��ùص�ԭ����git bash ����һ���µģ�Ȼ��ִ��<code>hexo new &quot;�����󼪣���&quot;</code> ����ˢ����Ĳ��ͣ��Ϳ��Կ���������������<br>��Ȼ��Ӧ�û�����ƪ����hexo new ���µ�ʱ��Ӧ���ȹرշ���(<kbd>ctrl</kbd>+<kbd>c</kbd>)��<ol start="2">
-<li>ִ������������markdown�ļ����ɾ�̬��ҳ��������ִ����󣬻��� D:\Hexo\public\ Ŀ¼������һϵ��html��css���ļ���</li>
+<li>创建一个新的post<br>先不用关掉原来的git bash ，打开一个新的，然后执行<code>hexo new &quot;开博大吉！！&quot;</code> ，再刷新你的博客，就可以看到有新文章啦！<br>当然，应该会有两篇。在hexo new 文章的时候，应该先关闭服务(<kbd>ctrl</kbd>+<kbd>c</kbd>)。</li>
 </ol>
 </li>
-</ol>
+<li><p>执行下面的命令，将markdown文件生成静态网页。该命令执行完后，会在 D:\Hexo\public\ 目录下生成一系列html，css等文件。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>�༭���¡�<br>hexo new “My New Post”����D:\Hexo\source_postsĿ¼������һ��markdown�ļ���My-New-Post.md ����ʹ��һ��֧��markdown�﷨�ı༭������ʹ�õ���typora�����༭���ļ���</li>
-<li>����Github.<br>����Githubǰ��Ҫ����_config.yml�ļ��������ҵ����������:</li>
-</ol>
+</li>
+<li><p>编辑文章。<br>hexo new “My New Post”会在D:\Hexo\source_posts目录下生成一个markdown文件：My-New-Post.md 可以使用一个支持markdown语法的编辑器（我使用的是typora）来编辑该文件。</p>
+</li>
+<li><p>部署到Github.<br>部署到Github前需要配置_config.yml文件，首先找到下面的内容:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type:</span><br></pre></td></tr></table></figure>
-<p>Ȼ�������޸�Ϊ</p>
+<p>然后将它们修改为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: github</span><br><span class="line">  repository: git@github.com:anjimie/anjimie.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<ol start="5">
-<li>���������������һ�´�<a href="https://anjiemie.github.io" target="_blank" rel="noopener">https://anjiemie.github.io</a>, ������Ĳ��Ͳ鿴һ�°ɣ�</li>
+</li>
+<li><p>基本完成啦，尝试一下打开<a href="https://anjiemie.github.io" target="_blank" rel="noopener">https://anjiemie.github.io</a>, 或者你的博客查看一下吧！</p>
+</li>
 </ol>
-<h2 id="�ܽ�"><a href="#�ܽ�" class="headerlink" title="�ܽ�"></a>�ܽ�</h2><p>ÿ�β���Ĳ���������������</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p>���ز����������</p>
-<pre><code>$ hexo g #����
-$ hexo s #�������ط��񣬽�������Ԥ������
-</code></pre><h2 id="�����ܽ�"><a href="#�����ܽ�" class="headerlink" title="�����ܽ�"></a>�����ܽ�</h2><ol>
-<li>���������ܽ᣺</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #�½�����</span><br><span class="line">hexo new page &quot;pageName&quot; #�½�ҳ��</span><br><span class="line">hexo generate #���ɾ�̬ҳ����publicĿ¼</span><br><span class="line">hexo server #����Ԥ�����ʶ˿ڣ�Ĭ�϶˿�4000��&apos;ctrl + c&apos;�ر�server��</span><br><span class="line">hexo deploy #��.deployĿ¼����GitHub</span><br><span class="line">hexo help  # �鿴����</span><br><span class="line">hexo version  #�鿴Hexo�İ汾</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>�������</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g  #���ɼӲ���</span><br><span class="line">hexo server -g  #���ɼ�Ԥ��</span><br></pre></td></tr></table></figure>
-<p>��дΪ��</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>   每次部署的步骤有以下三步：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>   本地测试则可以用</p>
+<pre><code>$ hexo g #生成
+$ hexo s #启动本地服务，进行文章预览调试
+</code></pre><h2 id="命令总结"><a href="#命令总结" class="headerlink" title="命令总结"></a>命令总结</h2><ol>
+<li><p>常用命令总结：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复合命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g  #生成加部署</span><br><span class="line">hexo server -g  #生成加预览</span><br></pre></td></tr></table></figure>
+<p>简写为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
-<h2 id="������"><a href="#������" class="headerlink" title="������"></a>������</h2><ol>
-<li>����</li>
-<li>����</li>
-<li>���</li>
+<h2 id="踩过的那些坑"><a href="#踩过的那些坑" class="headerlink" title="踩过的那些坑"></a>踩过的那些坑</h2></li>
+</ol>
+<pre><code>1. hexo安装不成功
+</code></pre><p>   可能的解决方案：<br>       -查看系统变量是否有问题<br>       -使用git bash（贼好用！）</p>
+<pre><code>2. 发表的博客中文乱码。
+  解决方案：md文件检查一下是否为utf-8编码。
+</code></pre><p>   <strong>TBC</strong></p>
+<h2 id="待补充"><a href="#待补充" class="headerlink" title="待补充"></a>待补充</h2><ol>
+<li>主题</li>
+<li>评论</li>
+<li>插件</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/GitHub Pages+hexo 搭建博客/" data-id="cjvwdtg5x0000uwunn8azi7am" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/GitHub Pages+hexo 搭建博客/" data-id="cjvwe49pm0001hgunro5qt2o9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -173,7 +180,7 @@ $ hexo s #�������ط��񣬽�������Ԥ�����
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/开博大吉/" data-id="cjvwdtg6i0002uwunyfx46ecn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/开博大吉/" data-id="cjvwe49pt0002hgunuxodyw7e" class="article-share-link">Share</a>
       
       
     </footer>
@@ -218,7 +225,7 @@ $ hexo s #�������ط��񣬽�������Ԥ�����
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/hello-world/" data-id="cjvwdtg670001uwunpha002pf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/hello-world/" data-id="cjvwe49pg0000hgun40im0jkm" class="article-share-link">Share</a>
       
       
     </footer>
